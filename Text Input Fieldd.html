@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text Validation</title>
+</head>
+<body>
+
+    <input type="text" id="name" placeholder="Enter your name">
+    <button onclick="validateInput()">Submit</button>
+
+    <script>
+        function validateInput() {
+            let text = document.getElementById("name").value;
+
+            if (text.trim() === "") {
+                alert("Text field cannot be empty!");
+            } else {
+                alert("Input is valid: " + text);
+            }
+        }
+    </script>
+
+</body>
+</html>
